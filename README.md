@@ -108,4 +108,4 @@ Uno de los principales enfoques del proyecto fue desarrollar una identidad visua
 
 ## 👨‍💻 Autor
 
-Juan Pablo Barragán Bueno
+Yeison Alexander Guzman Garzon
