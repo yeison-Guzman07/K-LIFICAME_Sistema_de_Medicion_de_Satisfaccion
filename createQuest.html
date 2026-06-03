@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Encuesta</title>
+    <link rel="shortcut icon" href="sources/img/Klificame Isotipo Color.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="sources/css/base.css">
+    <link rel="stylesheet" href="sources/css/navigation.css">
+    <link rel="stylesheet" href="sources/css/nav.css">
+    <link rel="stylesheet" href="sources/css/footer.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="lib/fontawesome-free-6.5.2-web/css/fontawesome.css">
+    <link rel="stylesheet" href="lib/fontawesome-free-6.5.2-web/css/brands.css">
+    <link rel="stylesheet" href="lib/fontawesome-free-6.5.2-web/css/solid.css">
+    <link rel="stylesheet" href="lib/fontawesome-free-6.5.2-web/css/v5-font-face.css">
+
+    <link rel="stylesheet" href="sources/css/survey.css">
+</head>
+<header>
+    <!-- Si se va a ahorrar codigo esto deberia ser un include de PHP supongo -->
+<nav class="" id="nav">
+    <div class="navContainer">
+        <div class="navImgContainer">
+            <a href="index.php"><img src="sources/img/Klificame Nav.png" alt="IMAGOTIPO K-LIFICAME" class="imagotipo"></a>
+        </div>
+        <div class="containerIcon">
+            <i class="fa-solid fa-bars menu navIcon" id="bars"></i>
+            <i class="fa-solid fa-universal-access navIcon" id="accessibilityMenu"></i>
+        </div>
+    </div>
+    <div class="lower" id="lowerInput">
+        <i class="fa-solid fa-caret-up rowLower"></i>
+    </div>
+</nav>
+    <!--MENU ACCESIBILIDAD-->
+<div class="accessMenu" id="accessMenu">
+    <div class="menu-img">
+        <img src="sources/img/Klificame Isotipo Blanco.png" alt="ISOTIPO K-LIFICAME" class="img_navigation">
+        <h1>Accesibilidad</h1><br>
+    </div>
+    <div class="menu-options">
+        <div class="accessGroup">
+            <div class="optionDiv"><label for="darkTeme" id="darkModeInput"><i class="fa-solid fa-moon"></i> Tema Oscuro </label><input type="checkbox" id="darkTheme" name="scales" /></div>
+            <div class="optionDiv"><label for="greyScale" id="greyScaleInput"><i class="fa-solid fa-circle-half-stroke"></i> Escala De Grises </label><input type="checkbox" id="greyScale" name="scales" /></div>
+            <div class="optionDiv"><label for="yellowBlack" id="yellowBlackInput"><i class="fa-solid fa-circle-half-stroke color1"></i> Amarillo Negro </label><input type="checkbox" id="yellowBlack" name="scales" /></div>
+            <div class="optionDiv"><label for="contrast" id="contrastInput"><i class="fa-solid fa-circle-half-stroke color2"></i> Alto Contraste </label><input type="checkbox" id="contrast" name="scales" /></div>
+        </div>
+        <div class="accessGroup">
+            <div class="optionDiv"><label for="showHiperV" id="showHiperVInput"><i class="fa-solid fa-link"></i> Marcar Enlaces </label><input type="checkbox" id="showHiperV" name="scales" /></div>
+        </div>
+    </div>
+</div>
+<div class="accessBackground" id="bg_access">
+</div>
+<!--MENU NORMAL-->
+<div class="true-menu" id="menu">
+<div class="menu-img">
+    <img src="sources/img/Klificame Isotipo Blanco.png" alt="ISOTIPO K-LIFICAME" class="img_navigation">
+    <h1>Menú Principal</h1><br>
+</div>
+<div class="menu-options">
+    <a href="index.php"><i class="fa-solid fa-house"></i> Login </a>
+    <a href="pages/Info.html"><i class="fa-solid fa-house"></i> Sobre Nosotros </a>
+</div>
+</div>
+<div class="background" id="bg_menu">
+</div>
+<!--FIN MENU-->
+</header>
+<body>
+    <main>
+        <form action="">
+        <h1>CREADOR DE ENCUESTAS</h1>
+        <section class="questTitle">
+            <input type="text" placeholder="Encuesta Sin Titulo">
+        </section>
+
+        <section class="question" id="Question1">
+            <input type="text" placeholder="Pregunta 1">
+            <div class="questOptions">
+                <label for="Question1Option1" class="optionContent" id="ContentQuestion1Option1">
+                    <img src="sources/img/1_Color.png" alt="">
+                    <p class="optionP1">MUY INSATISFECHO</p>
+                    <input type="radio" id="Question1Option1" name="Question1" class="radioOption">
+                </label>
+
+                <label for="Question1Option2" class="optionContent" id="ContentQuestion1Option2">
+                    <img src="sources/img/2_Color.png" alt="">
+                    <p class="optionP2">INSATISFECHO</p>
+                    <input type="radio" id="Question1Option2" name="Question1" class="radioOption">
+                </label>
+                
+                <label for="Question1Option3" class="optionContent" id="ContentQuestion1Option3">
+                    <img src="sources/img/3_Color.png" alt="">
+                    <p class="optionP3">NEUTRAL</p>
+                    <input type="radio" id="Question1Option3" name="Question1" class="radioOption">
+                </label>
+                
+                <label for="Question1Option4" class="optionContent" id="ContentQuestion1Option4">
+                    <img src="sources/img/4_Color.png" alt="">
+                    <p class="optionP4">SATISFECHO</p>
+                    <input type="radio" id="Question1Option4" name="Question1" class="radioOption">
+                </label>
+                
+                <label for="Question1Option5" class="optionContent" id="ContentQuestion1Option5">
+                    <img src="sources/img/5_Color.png" alt="">
+                    <p class="optionP5">MUY SATISFECHO</p>
+                    <input type="radio" id="Question1Option5" name="Question1" class="radioOption">
+                </label>
+                <script>
+                    ContentQuestion1Option1.addEventListener("click", function(){
+                        ContentQuestion1Option1.classList.add('active');
+                        ContentQuestion1Option2.classList.remove('active');
+                        ContentQuestion1Option3.classList.remove('active');
+                        ContentQuestion1Option4.classList.remove('active');
+                        ContentQuestion1Option5.classList.remove('active');
+                    });
+
+                    ContentQuestion1Option2.addEventListener("click", function(){
+                        ContentQuestion1Option2.classList.add('active');
+                        ContentQuestion1Option1.classList.remove('active');
+                        ContentQuestion1Option3.classList.remove('active');
+                        ContentQuestion1Option4.classList.remove('active');
+                        ContentQuestion1Option5.classList.remove('active');
+                    });
+
+                    ContentQuestion1Option3.addEventListener("click", function(){
+                        ContentQuestion1Option3.classList.add('active');
+                        ContentQuestion1Option1.classList.remove('active');
+                        ContentQuestion1Option2.classList.remove('active');
+                        ContentQuestion1Option4.classList.remove('active');
+                        ContentQuestion1Option5.classList.remove('active');
+                    });
+
+                    ContentQuestion1Option4.addEventListener("click", function(){
+                        ContentQuestion1Option4.classList.add('active');
+                        ContentQuestion1Option1.classList.remove('active');
+                        ContentQuestion1Option2.classList.remove('active');
+                        ContentQuestion1Option3.classList.remove('active');
+                        ContentQuestion1Option5.classList.remove('active');
+                    });
+
+                    ContentQuestion1Option5.addEventListener("click", function(){
+                        ContentQuestion1Option5.classList.add('active');
+                        ContentQuestion1Option1.classList.remove('active');
+                        ContentQuestion1Option2.classList.remove('active');
+                        ContentQuestion1Option3.classList.remove('active');
+                        ContentQuestion1Option4.classList.remove('active');
+                    });
+                </script>
+            </div>
+            <i class="fa-solid fa-trash-can"></i>
+        </section>
+        <div class="comentary">
+            <textarea name="comentary" placeholder="Escribe un comentario anonimo (opcional)"></textarea>
+        </div>
+    </form>
+    </main>
+    <!-- FIN DEL HTML -->
+    <script src="sources/js/darkMode.js"></script>
+    <script src="sources/js/navigation.js"></script>
+
+    <!-- COMIENZA EL FOOTER -->
+    <footer class="pie-pagina">
+        <div class="grupo-2">
+            <small>Copyright 2024 &copy; All Rights Reserved. <b>K-LIFICAME</b></small>
+        </div>
+    </footer>
+</body>
+</html>
+
+<!--
+        <a href="https://api.whatsapp.com/send?text=Visita%20Nuestra%20Plataforma%20K-LIFICAME:%20https://klificamefisico.comunisoft.com" target="_blank">Compartir por WhatsApp</a>
+
+        <p>
+            <button class="btn" onclick="copiarAlPortapapeles('https://klificamefisico.comunisoft.com')">
+                Copiar enlace
+            </button>
+        </p>
+    
+        <script>
+            function copiarAlPortapapeles(texto) {
+                const elementoTemporal = document.createElement('textarea');
+                elementoTemporal.value = texto;
+                document.body.appendChild(elementoTemporal);
+                elementoTemporal.select();
+                document.execCommand('copy');
+                document.body.removeChild(elementoTemporal);
+                alert('Enlace copiado al portapapeles');
+            }
+        </script>-->
