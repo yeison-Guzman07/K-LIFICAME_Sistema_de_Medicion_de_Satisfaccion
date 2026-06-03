@@ -1,0 +1,102 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.topZone{
+    margin-top: 50px;
+    width: 96%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--ColorSec);
+    border-radius: 15px;
+    border-left: solid var(--Color5) 6px;
+    border-right: solid var(--Color1) 6px;
+    margin-bottom: 50px;
+}
+
+.topZone img{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 70%;
+}
+
+body.darkTheme .topZone img{
+    content: url(../img/logotipo_Dark.png);
+}
+
+body.greyScale .topZone img{
+    filter: grayscale(100%);
+}
+
+body.yellowBlack .topZone img{
+    content: url(../img/logotipo_Yellow.png);
+    filter: drop-shadow(
+        0 0 1px rgba(255, 221, 0)
+    );
+}
+
+body.contrast .topZone img{
+    filter: contrast(200%);
+}
+
+.infoZone{
+    width: 96%;
+    display: flex;
+    flex-direction: column;
+    background: var(--ColorSec);
+    border-radius: 15px;
+    border-left: solid var(--Color5) 6px;
+    border-right: solid var(--Color1) 6px;
+    margin-bottom: 20px;
+}
+
+.infoZone h2{
+    font-family: 'Franklin Gothic Heavy';
+    font-size: 3em;
+    margin-top: 20px;
+    margin-left: 35px;
+    color: var(--Color5);
+}
+
+.infoZone .infoP{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.infoZone p{
+    margin-left: 50px;
+    margin-top: 15px;
+    margin-right: 50px;
+    text-align: justify;
+    color: var(--Texto2);
+}
+
+.infoZone span{
+    font-weight: bold;
+    color: var(--Hiperviculos1);
+}
+
+.infoZone b{
+    font-weight: bold;
+    color: var(--Color5);
+}
+
+.infoZone ul{
+    margin-left: 100px;
+    margin-right: 50px;
+}
+
+ul li{
+    color: var(--Color5);
+    text-align: justify;
+}
+
+li .textLi{
+    color: var(--Texto2);
+    font-weight: 100;
+}

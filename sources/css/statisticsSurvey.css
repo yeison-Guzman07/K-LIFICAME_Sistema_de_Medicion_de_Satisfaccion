@@ -1,0 +1,48 @@
+.subtitle2{
+    color: var(--Color1);
+    font-family: 'Franklin Gothic Heavy';
+    font-size: 2em;
+    margin-top: 25px;
+}
+
+.questionsZone{
+    width: 1300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.questionInfo{
+    display: flex;
+    align-items: center;
+    border-bottom: solid var(--Color5) 5px;
+}
+
+.chartQuestion{
+    width: 800px;
+    height: 300px;
+}
+
+.infoChartTxt{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+.infoChartTxt span p{
+    color: var(--Color2);
+    font-family: 'Franklin Gothic Heavy';
+    font-size: 1.5em;
+    margin-top: 25px;
+}
+
+.infoChartTxt p{
+    color: var(--Texto1);
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top: 5px;
+}

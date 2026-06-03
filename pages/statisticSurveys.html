@@ -1,0 +1,377 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://klificamefisico.comunisoft.com/sources/img/Klificame Isotipo Color.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://klificamefisico.comunisoft.com/sources/css/base.css">
+    <link rel="stylesheet" href="https://klificamefisico.comunisoft.com/sources/css/navigation.css">
+    <link rel="stylesheet" href="https://klificamefisico.comunisoft.com/sources/css/nav.css">
+    <link rel="stylesheet" href="https://klificamefisico.comunisoft.com/sources/css/footer.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="../lib/fontawesome-free-6.5.2-web/css/fontawesome.css">
+    <link rel="stylesheet" href="../lib/fontawesome-free-6.5.2-web/css/brands.css">
+    <link rel="stylesheet" href="../lib/fontawesome-free-6.5.2-web/css/solid.css">
+    <link rel="stylesheet" href="../lib/fontawesome-free-6.5.2-web/css/v5-font-face.css">
+
+    <link rel="stylesheet" href="https://klificamefisico.comunisoft.com/sources/css/statistics.css">
+    <link rel="stylesheet" href="../sources/css/statisticsSurvey.css">
+    <title>Estadisticas De Encuesta</title>
+</head>
+
+<header>
+        <!-- Si se va a ahorrar codigo esto deberia ser un include de PHP supongo -->
+        <nav class="" id="nav">
+        <div class="navContainer">
+            <div class="navImgContainer">
+                <a href="index.php"><img src="https://klificamefisico.comunisoft.com/sources/img/Klificame Nav.png" alt="IMAGOTIPO K-LIFICAME" class="imagotipo"></a>
+            </div>
+            <div class="containerIcon">
+                <i class="fa-solid fa-bars menu navIcon" id="bars"></i>
+                <i class="fa-solid fa-universal-access navIcon" id="accessibilityMenu"></i>
+                <i class="fa-solid fa-file-pdf navIcon" id="report"></i>
+                <i class="fa-solid fa-right-from-bracket exit navIcon"></i><!-- cerrar sesion -->
+            </div>
+        </div>
+        <div class="lower" id="lowerInput">
+            <i class="fa-solid fa-caret-up rowLower"></i>
+        </div>
+    </nav>
+        <!--MENU ACCESIBILIDAD-->
+    <div class="accessMenu" id="accessMenu">
+        <div class="menu-img">
+            <img src="https://klificamefisico.comunisoft.com/sources/img/Klificame Isotipo Blanco.png" alt="ISOTIPO K-LIFICAME" class="img_navigation">
+            <h1>Accesibilidad</h1><br>
+        </div>
+        <div class="menu-options">
+            <div class="accessGroup">
+                <div class="optionDiv"><label for="darkTeme" id="darkModeInput"><i class="fa-solid fa-moon"></i> Tema Oscuro </label><input type="checkbox" id="darkTheme" name="scales" /></div>                
+                <div class="optionDiv"><label for="greyScale" id="greyScaleInput"><i class="fa-solid fa-circle-half-stroke"></i> Escala De Grises </label><input type="checkbox" id="greyScale" name="scales" /></div>
+                <div class="optionDiv"><label for="yellowBlack" id="yellowBlackInput"><i class="fa-solid fa-circle-half-stroke color1"></i> Amarillo Negro </label><input type="checkbox" id="yellowBlack" name="scales" /></div>
+                <div class="optionDiv"><label for="contrast" id="contrastInput"><i class="fa-solid fa-circle-half-stroke color2"></i> Alto Contraste </label><input type="checkbox" id="contrast" name="scales" /></div>
+            </div>
+            <div class="accessGroup">
+                <div class="optionDiv"><label for="showHiperV" id="showHiperVInput"><i class="fa-solid fa-link"></i> Marcar Enlaces </label><input type="checkbox" id="showHiperV" name="scales" /></div>
+            </div>
+        </div>
+    </div>
+    <div class="accessBackground" id="bg_access">
+    </div>
+    <div class="true-menu" id="menu">
+        <div class="menu-img">
+            <img src="https://klificamefisico.comunisoft.com/sources/img/Klificame Isotipo Blanco.png" alt="ISOTIPO K-LIFICAME" class="img_navigation">
+            <h1>Menú Principal</h1><br>
+        </div>
+        <div class="menu-options">
+            <div class="accessGroup">
+                <a href="index.php"><i class="fa-solid fa-house"></i> Página de inicio </a>
+            </div>
+            <div class="accessGroup">
+                <a href="adminSurvey.php"><i class="fa-solid fa-clipboard"></i></i> Ver Encuestas Creadas </a>            
+            </div>
+        </div>
+    </div>
+    <div class="background" id="bg_menu">
+    </div>
+    <!--FIN MENU-->
+</header>
+
+<body>
+    <main class="container">
+        <h1 class="title">ESTADISTICAS DE ENCUESTA <br> "Prueba Del Sistema De Encuestas"</h1>
+        <section class="calif-container" id="calif-container">
+
+            <div class="Calif InActive1" id="Calif_1">
+                <div class="statistic_container">
+                    <div class="front">
+                        <div class="scaleFace">
+                            <img src="https://klificamefisico.comunisoft.com/sources/img/1_Blanco.png" id="Abrir_1" alt="Cara Muy Insatisfecho">
+                            <p class="cantidad">1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Calif InActive2" id="Calif_2">
+                <div class="statistic_container">
+                    <div class="front">
+                        <div class="scaleFace">
+                            <img src="https://klificamefisico.comunisoft.com/sources/img/2_Blanco.png" id="Abrir_2" alt="Cara Insatisfecho">
+                            <p class="cantidad">1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Calif InActive3" id="Calif_3">
+                <div class="statistic_container">
+                    <div class="front">
+                        <div class="scaleFace">
+                            <img src="https://klificamefisico.comunisoft.com/sources/img/3_Blanco.png" id="Abrir_3" alt="Cara Neutral">
+                            <p class="cantidad">1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Calif InActive1" id="Calif_4">
+                <div class="statistic_container">
+                    <div class="front">
+                        <div class="scaleFace">
+                            <img src="https://klificamefisico.comunisoft.com/sources/img/4_Blanco.png" id="Abrir_4" alt="Cara Satisfecho">
+                            <p class="cantidad">1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Calif InActive2" id="Calif_5">
+                <div class="statistic_container">
+                    <div class="front">
+                        <div class="scaleFace">
+                            <img src="https://klificamefisico.comunisoft.com/sources/img/5_Blanco.png" id="Abrir_5" alt="Cara Muy Insatisfecho">
+                            <p class="cantidad">1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="questionsZone">
+            <h2 class="subtitle">ANALISIS POR PREGUNTA</h2>
+            <div>
+                <h3 class="subtitle2">P.1: ¿Que le parece el diseño de este sistema?</h3>
+                <div class="questionInfo">
+                    <div class="chartQuestion">
+                        <canvas id="chartQuestion1"></canvas>
+                    </div>
+                    <div class="infoChartTxt">
+                        <span><p>Porcentaje De Respuestas</p></span>
+                        <p>Muy Insatisfecho - 20%</p>
+                        <p>Insatisfecho - 20%</p>
+                        <p>Neutral - 20%</p>
+                        <p>Satisfecho - 20%</p>
+                        <p>Muy Satisfecho - 20%</p>
+
+                        <span><p>Tasa de Insatisfacción</p></span>
+                        <p>40%</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="Pfinal">
+            <p class="viewMore">Si quieres conocer más sobre las calificaciones, te invitamos a hacer <a href="">clic aquí.</a> 
+                Accede a la tabla completa con información detallada sobre cada evaluación. ¡Agradecemos tu participación!</p>
+        </div>
+    </main>
+    <script src="https://klificamefisico.comunisoft.com/lib/cdn.jsdelivr.net_npm_sweetalert2@9.js"></script>
+    <script src="https://klificamefisico.comunisoft.com/lib/cdn.jsdelivr.net_npm_chart.js"></script>
+
+    <script src="https://klificamefisico.comunisoft.com/lib/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script src="https://klificamefisico.comunisoft.com/sources/js/darkMode.js"></script>
+    <script src="https://klificamefisico.comunisoft.com/sources/js/navigation.js"></script>
+    <script src="https://klificamefisico.comunisoft.com/sources/js/logout.js"></script>
+    <!-- COMIENZA EL FOOTER -->
+    <footer class="pie-pagina">
+        <div class="grupo-2">
+            <small>Copyright 2024 &copy; All Rights Reserved. <b>K-LIFICAME</b></small>
+        </div>
+    </footer>
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const darkModeInput = document.getElementById("darkModeInput");
+
+            const chartQuestion1 = document.getElementById("chartQuestion1").getContext("2d");
+        
+            const skippedWhite = (ctx, value) => ctx.p0.skip || ctx.p1.skip ? value : undefined;
+            const skipped = (ctx, value) => ctx.p0.skip || ctx.p1.skip ? value : undefined;
+            const down = (ctx, value) => ctx.p0.parsed.y > ctx.p1.parsed.y ? value : undefined;
+
+            var ColorPrin, color1, color2, color3, color4, color5, color6, Texto1, GraficosCartas, CartasClaras;
+            
+            var chartDisRatePie, chartPercentage, chartTrends;
+
+            var chartWeek_1, chartMoths_1, chartOffices_1, chartWeek_2, chartMoths_2, chartOffices_2, chartWeek_3, chartMoths_3, chartOffices_3, chartWeek_4, chartMoths_4, chartOffices_4, chartWeek_5, chartMoths_5, chartOffices_5;
+
+            let created = false;
+
+            function buscarColor(){
+                ColorPrin = "#ffffff";
+                color1 = "#ff2952";
+                color2 = "#e47202";
+                color3 = "#ffdb00";
+                color4 = "#88e74f";
+                color5 = "#01c302";
+                color6 = "#0073ff";
+                Texto1 = "#1f0043";
+                GraficosCartas = "#ffffff";
+
+                if (localStorage.getItem('dark-mode') === 'true') {
+                    ColorPrin = "#1f0043";
+                    color1 = "#ff2952";
+                    color2 = "#e47202";
+                    color3 = "#ffdb00";
+                    color4 = "#88e74f";
+                    color5 = "#01c302";
+                    color6 = "#0073ff";
+                    Texto1 = "#ffffff";
+                    GraficosCartas = "#ffffff";
+                }
+                
+                if (localStorage.getItem('greyScale-mode') === 'true') {
+                    ColorPrin = "#ffffff";
+                    color1 = "#5a5a5a";
+                    color2 = "#808080";
+                    color3 = "#d3d3d3";
+                    color4 = "#c8c8c8";
+                    color5 = "#8b8b8b";
+                    color6 = "#5c5c5c";
+                    Texto1 = "000000";
+                    GraficosCartas = "#ffffff";
+                }
+                
+                if (localStorage.getItem('yellowBlack-mode') === 'true') {
+                    ColorPrin = "#000000";
+                    color1 = "#6f6001";
+                    color2 = "#9e8801";
+                    color3 = "#ffdf1b";
+                    color4 = "#f8d501";
+                    color5 = "#ac9401";
+                    color6 = "#6f6001";
+                    Texto1 = "#ffdf1b";
+                    GraficosCartas = "#000000";
+                }
+                
+                if (localStorage.getItem('contrast-mode') === 'true') {
+                    ColorPrin = "#ffffff";
+                    color1 = "#FF0024";
+                    color2 = "#FF5E00";
+                    color3 = "#FFFF00";
+                    color4 = "#90FF1E";
+                    color5 = "#00FF00";
+                    color6 = "#00d9ff";
+                    Texto1 = "#130033";
+                    GraficosCartas = "#ffffff";
+                }
+
+            }
+
+            buscarColor();
+
+            function cargarGraficos(){
+                if (created) {
+                    chartWeek_1.destroy();
+
+                    created = false;               
+                }
+                buscarColor();
+                    
+                setTimeout(function() {
+                    chartWeek_1 = new Chart(chartQuestion1, {
+                        type: "bar",
+                        data: {
+                            labels: ["Tipo De Calificacion"],
+                            datasets: [{
+                                label: "MUY INSATISFECHO",
+                                data: [1],
+                                borderColor: color1,
+                                backgroundColor: color1+'81',
+                                borderWidth: 6,
+                            },{
+                                label: "INSATISFECHO",
+                                data: [1],
+                                borderColor: color2,
+                                backgroundColor: color2+'81',
+                                borderWidth: 6,
+                            },{
+                                label: "NEUTRAL",
+                                data: [1],
+                                borderColor: color3,
+                                backgroundColor: color3+'81',
+                                borderWidth: 6,
+                            },{
+                                label: "SATISFECHO",
+                                data: [1],
+                                borderColor: color4,
+                                backgroundColor: color4+'81',
+                                borderWidth: 6,
+                            },{
+                                label: "MUY SATISFECHO",
+                                data: [1],
+                                borderColor: color5,
+                                backgroundColor: color5+'81',
+                                borderWidth: 6,
+                            }]
+                        },
+                        options: {
+                            maintainAspectRatio: false,
+                            plugins: {
+                                title: {
+                                    display: true,
+                                    text: "Grafico De Calificaciones En La Pregunta 1",
+                                    color: Texto1, // Color del texto del título
+                                    font: {
+                                            size: 14,
+                                        },
+                                },
+                                legend: {
+                                    labels: {
+                                        color: Texto1,  // Cambiar el color del texto del conjunto de datos
+                                        font: {
+                                            family: 'Franklin Gothic Heavy' 
+                                        }
+                                }
+                                }
+                            },
+                            scales: {
+                                x: {
+                                    ticks: {
+                                        color: Texto1,
+                                        font: {
+                                            size: 14,
+                                        },
+                                    },
+                                    grid: {
+                                        color: Texto1+'4d'  // Color de las líneas del eje y
+                                    }
+                                },
+                                y: {
+                                    ticks: {
+                                        color: Texto1,
+                                        font: {
+                                            size: 14,
+                                        },
+                                    },
+                                    grid: {
+                                        color: Texto1+'4d'  // Color de las líneas del eje y
+                                    }
+                                }
+                            }
+                        }
+                    });
+                        }, 100);
+                        created = true;
+                }
+
+                cargarGraficos();
+
+                darkModeInput.addEventListener("click", function(){
+                    cargarGraficos();
+                });
+                greyScaleInput.addEventListener("click", function(){
+                    cargarGraficos();
+                });
+                yellowBlackInput.addEventListener("click", function(){
+                    cargarGraficos();
+                });
+                contrastInput.addEventListener("click", function(){
+                    cargarGraficos();
+                });
+        });
+    </script>
+</body>
+
+</html>

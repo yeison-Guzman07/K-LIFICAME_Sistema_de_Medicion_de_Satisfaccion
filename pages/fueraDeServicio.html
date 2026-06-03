@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../sources/css/base.css">
+    <title>Trabajamos en ello</title>
+</head>
+<style>
+    main{
+        font-family: sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    h1{
+        margin-top: 60px;
+        font-family: 'Franklin Gothic Heavy';
+        font-size: 3em;
+    }
+
+    img{
+        width: 80%;
+        margin-top: 50px;
+    }
+
+    .text{
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    p{
+        margin-left: 50px;
+        margin-right: 50px;
+        text-align: justify;
+        font-size: 1.5em;
+    }
+
+    h2{
+        margin-left: 40px;
+    }
+
+    button{
+        background: var(--Color5);
+        color: #fff;
+        font-size: 2em;
+        font-weight: bold;
+        border: none;
+        border-radius: 10px;
+        width: 200px;
+        height: 60px;
+        margin-left: 55px;
+        margin-top: 25px;
+        margin-bottom: 70px;
+        transition: all .3s;
+    }
+    button:hover{
+        cursor: pointer;
+        transform: scale(105%);
+    }
+</style>
+<body>
+    <main>
+        <img src="../sources//img/logotipo_Dark.png" alt="" onclick="volverAtras()"">
+        <h1>Actualmente estamos realizando mantenimiento</h1>
+        <div class="tex">
+            <p>Hola,</p>
+            <p>En K-LIFICAME, nos esforzamos por ofrecerte la mejor experiencia posible. Para lograrlo, periódicamente necesitamos llevar a cabo tareas de mantenimiento y actualizaciones en nuestra plataforma.</p>
+            <p>En este momento, esta sección está temporalmente fuera de servicio mientras implementamos mejoras importantes.</p>
+            <h2>¿Qué significa esto para ti?</h2>
+            <p> - No podrás realizar ninguna operación en esta sección de la plataforma hasta que finalice el mantenimiento. <br>
+                - Estamos trabajando para terminar lo antes posible y volver a estar operativos en breve. <br>
+                - Tus datos están seguros y protegidos; ninguna información se verá afectada durante este proceso.</p>
+            <p>¡Gracias por tu comprensión y por ser parte de K-LIFICAME!</p>
+        </div>
+        <img src="../sources/img/TrabajandoEnEllo_Ligth.png" alt="">
+        <button onclick="volverAtras()">Regresar</button>
+    </main>
+    <script src="../lib/sweetalert2@11.js"></script>
+    <script>
+        function volverAtras(){
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

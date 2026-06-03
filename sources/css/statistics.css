@@ -1,0 +1,1214 @@
+body {
+    overflow-x: hidden;
+    transition: all .5s;
+}
+
+.container{
+    margin-top: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.title{
+    margin-bottom: 10px;
+    color: var(--Color1);
+    font-family: 'Franklin Gothic Heavy';
+    font-size: 3em;
+    text-align: center;
+}
+
+.subtitle{
+    margin-bottom: 10px;
+    color: var(--Color5);
+    font-family: 'Franklin Gothic Heavy';
+    font-size: 2.4em;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.statistic_container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    flex-direction: row;
+    transition: all 1s;
+}
+
+.calif-container{
+    width: 1300px;
+    height: 400px;
+    display: flex;
+    transition: all 1s;
+    margin-bottom: 25px;
+}
+
+.Calif{
+    width: 250px;
+    height: 400px;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: all 1s;
+}
+
+#Calif_1{ background: var(--Color1);} #Calif_2{ background: var(--Color2);} #Calif_3{ background: var(--Color3);} #Calif_4{ background: var(--Color4);} #Calif_5{ background: var(--Color5);}
+
+.InActive1{
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.InActive2{
+    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
+}
+
+.InActive3{
+    clip-path: polygon(50% 0%, 100% 15%, 100% 100%, 0 100%, 0 15%);
+}
+
+.InActive1:hover, .InActive2:hover, .InActive3:hover{
+    transform: scaleY(107%);
+}
+
+.scaleFace img:hover{
+    cursor: pointer;
+    transform: scaleX(107%);
+}
+
+.activeContainer{
+    width: 1300px;
+    height: 550px;
+    display: flex;
+}
+
+.active{
+    width: 1300px;
+    height: 550px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.disActive{
+    width: 0px;
+    height: 550px;
+    margin-left: 0px;
+    margin-right: 0px;
+    position: inherit;
+    
+}
+
+/**************************************************************************************/
+
+.front{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: 100%;
+    transition: all .5s;
+    left: 0;
+    
+}
+
+.scaleFace{
+    width: 250px;
+    height: 350;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scaleFace img{
+    margin-top: 55px;
+    width: 150px;
+    height: auto;
+    vertical-align: bottom;
+    transition: all .5s;
+}
+
+body.yellowBlack .scaleFace img{
+    filter: invert(100%);
+}
+
+.front .cantidad{
+    color: var(--TextoCartas);
+    font-family: 'Franklin Gothic Heavy';
+    font-size: 6em;
+    margin-top: 10px;
+}
+
+.front .porcentaje{
+    color: var(--TextoCartas);
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 3em;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.ocultos{
+    transition: all .5s;
+    overflow: hidden;
+}
+
+#chartBarContainer_1, #chartBarContainer_2, #chartBarContainer_3, #chartBarContainer_4, #chartBarContainer_5{    
+    border-bottom: solid var(--TextoCartas) 3px;
+}
+
+.offices{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 430px;
+    height: 550px;
+}
+
+.titleCal{
+    color: var(--TextoCartas);
+    font-family: 'Franklin Gothic Heavy';
+    font-size: 2.6em;
+    margin-top: 20px;
+    border-bottom: solid var(--LineasCartas) 3px;
+}
+
+.ActivePorcentajes{
+    height: 150px;
+    width: 250px;
+    border-top: solid var(--TextoCartas) 3px;
+}
+
+.DisActivePorcentajes{
+    width: 300px;
+    height: 0px;
+}
+
+.ActiveStatistic{
+    width: 600px;
+    height: 500px;
+    border-left: solid var(--TextoCartas) 3px;
+    border-right: solid var(--TextoCartas) 3px;
+    display: flex;
+    flex-direction: column;
+}
+
+.DisActiveStatistic{
+    width: 0px;
+    height: 500px;
+}
+
+.ActiveCharts{
+    width: 600px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.ActiveChartOffice{
+    display: flex;
+}
+
+.DisActiveChartOffice{
+    display: none;
+}
+
+.chart2{
+    width: 400px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.DisActiveCharts{
+    display: none;
+}
+
+
+/********************************************************************************/
+
+
+.dissatisfaction{
+    width: 1400px;
+    height: 700px;
+    display: flex;
+}
+
+.dissatisfactionRate{
+    width: 550px;
+    height: 650px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-right: solid var(--Color5) 5px;
+    border-left: solid var(--Color5) 5px;
+}
+
+.RateP{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5em;
+    margin-top: 250px;
+    text-align: center;
+    z-index: 0;
+    width: 180px;
+    height: 160px;
+    color: var(--Texto1);
+    height: 200px;
+}
+
+.RateP p{
+    font-family: 'Franklin Gothic Heavy';
+}
+
+.RateP span{
+    font-family: 'Franklin Gothic Heavy';
+    color: var(--Color2);
+}
+
+.dissatisfactionEvolution{
+    height: 650px;
+    width: 850px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-right: solid var(--Color5) 5px;
+}
+
+.dissatisfactionEvolution p{
+    color: var(--Texto1);
+    font-family: 'Franklin Gothic Heavy';
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.1em;
+}
+
+.dissatisfactionEvolution .Sp1{
+    color: var(--Color1);
+    font-family: 'Franklin Gothic Heavy';
+}
+
+.dissatisfactionEvolution .Sp2{
+    color: var(--Color2);
+    font-family: 'Franklin Gothic Heavy';
+}
+
+.evolutionDissatis{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.percentage{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.percentage .percentageP{
+    font-size: 5em;
+}
+
+.percentage h3{
+    font-size: 1.7em;
+    font-family: 'Franklin Gothic Heavy';
+    margin-bottom: 15px;
+}
+
+.InsatisEvoluImg{
+    width: 350px;
+}
+
+body.greyScale .InsatisEvoluImg{
+    filter: grayscale(100%);
+}
+
+body.yellowBlack .InsatisEvoluImg.baja{
+    content: url('../img/insatis_baja_Yellow.png');
+
+}
+
+body.yellowBlack .InsatisEvoluImg.sube{
+    content: url('../img/insatis_sube_Yellow.png');
+}
+
+body.contrast .InsatisEvoluImg{
+    filter: contrast(200%);
+}
+
+.chartPercentage{
+    height: 550px;
+    width: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/********************************************************************************************/
+.monthTrends{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1300px;
+}
+
+.monthTrendChartContainer{
+    width: 1300px;
+    height: 500px;
+}
+
+.monthTrendChartContainer canvas{
+    width: 100%;
+}
+
+.averages{
+    width: 1300px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+}
+
+.average{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.average p{
+    font-size: 1.5em;
+    color: var(--Texto1);
+    font-family: 'Franklin Gothic Heavy';
+    margin-bottom: 25px;
+}
+
+.average span{
+    font-size: 1.2em;
+    color: var(--TextoPromedios);
+    font-family: 'Franklin Gothic Heavy';
+}
+
+.viewMore{
+    color: var(--Texto1);
+}
+
+.viewMore a{
+    color: var(--Hiperviculos2);
+}
+
+.sello{
+    height: 500px;
+    width: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sello img{
+    width: 400px;
+}
+
+body.darkTheme .selloIMG{
+    content: url("../img/selloDark.png");
+}
+
+body.greyScale .selloIMG{
+    filter: grayscale(100%);
+}
+
+body.yellowBlack .selloIMG{
+    content: url("../img/selloYellow.png");
+}
+
+body.contrast .selloIMG{
+    filter: contrast(200%);
+}
+
+.Pfinal{
+    width: 1300px;
+    display: flex;
+    text-align: justify;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+/**  RESPONSIVE STYLES  **/
+
+@media screen and (max-width: 1366px) {
+    .calif-container{
+        width: 1200px;
+        height: 350px;
+    }
+
+    .front{
+        width: 230px;
+    }
+
+    .front .cantidad{
+        font-size: 5.5em;
+    }
+
+    .Calif{
+        width: 230px;
+        height: 350px;
+    }
+
+    .scaleFace img{
+        width: 130px;
+    }
+
+    .active{
+        width: 1200px;
+        height: 550px;
+        margin-left: 0px;
+        margin-right: 0px;
+        display: flex;
+    }
+
+    .disActive{
+        width: 0px;
+        height: 400px;
+        margin-left: 0px;
+        margin-right: 0px;
+        position: inherit;
+    }
+
+    .ActivePorcentajes{
+        width: 230px;
+    }
+
+    .chart2{
+        width: 370px;
+    }
+
+    .dissatisfaction{
+        width: 1280px;
+        height: 630px;
+    }
+
+    .dissatisfactionRate{
+        width: 500px;
+        height: 600px;
+    }
+
+    .RateP{
+        font-size: 3em;
+        margin-top: 225px;
+    }
+
+    .evolutionDissatis{
+        margin-top: 25px;
+    }
+
+    .chartPercentage{
+        height: 450px;
+    }
+
+    .dissatisfactionEvolution{
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .subtitle{
+        font-size: 2em;
+    }
+
+    .front .cantidad{
+        font-size: 5em;
+    }
+
+    .dissatisfaction{
+        width: 1200px;
+        height: 630px;
+    }
+
+    .RateP{
+        font-size: 2em;
+        margin-top: 190px;
+    }
+
+    .chartPercentage{
+        height: 450px;
+        margin-left: 10px;
+    }
+
+    .InsatisEvoluImg{
+        width: 300px;
+    }
+
+    .monthTrendChartContainer{
+        width: 1200px;
+    }
+
+
+    .averages{
+        width: 1200px;
+    }
+
+    .Pfinal{
+        width: 1200px;
+    }
+   
+}
+
+@media screen and (max-width: 1152px) {
+    .subtitle{
+        font-size: 1.8em;
+    }
+
+    .calif-container{
+        width: 1000px;
+        height: 350px;
+    }
+
+    .front{
+        width: 190px;
+    }
+
+    .front .cantidad{
+        font-size: 4.5em;
+    }
+
+    .Calif{
+        width: 190px;
+        height: 350px;
+    }
+
+    .titleCal{
+        font-size: 2.2em;
+    }
+
+    .scaleFace img{
+        width: 130px;
+    }
+
+    .active{
+        width: 1000px;
+        height: 500px;
+        margin-left: 0px;
+        margin-right: 0px;
+        display: flex;
+    }
+
+    .disActive{
+        width: 0px;
+        height: 400px;
+        margin-left: 0px;
+        margin-right: 0px;
+        position: inherit;
+    }
+
+    .ActivePorcentajes{
+        width: 190px;
+        font-size: 0.8em;
+        margin-top: 40px;
+    }
+
+    .chart2{
+        width: 330px;
+    }
+
+    .ActiveCharts{
+        width: 500px;
+        height: 250px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .InsatisEvoluImg{
+        width: 200px;
+    }
+
+    .dissatisfaction{
+        width: 1000px;
+        height: 460px;
+    }
+
+    .dissatisfactionRate{
+        width: 370px;
+        height: 450px;
+    }
+
+    .evolutionDissatis{
+        width: 600px;
+        margin-top: 15px;
+        align-items: center;
+    }
+
+    .percentage h3{
+        font-size: 1.2em;
+    }
+
+    .chartPercentage{
+        width: 350px;
+        height: 300px;
+    }
+
+    .dissatisfactionEvolution{
+        height: 450px;
+        width: 630px;
+    }
+
+    .RateP{
+        margin-top: 170px;
+    }
+
+    .monthTrendChartContainer{
+        width: 980px;
+        height: 400px;
+    }
+
+    .averages{
+        width: 980px;
+    }
+
+    .Pfinal{
+        width: 980px;
+    }
+
+    .percentage .percentageP{
+        font-size: 4em;
+    }
+    
+    body.dark .percentage .percentageP{
+        font-size: 4em;
+    }
+}
+
+@media screen and (max-width: 540px) {
+
+    .title{
+        font-size: 2em;
+    }
+    
+    .calif-container{
+        flex-direction: column;
+        width: 500px;
+        height: 1050px;
+    }
+
+    .statistic_container{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .InActive1, .InActive2, .InActive3{
+        clip-path: polygon(85% 0, 100% 50%, 85% 100%, 15% 100%, 0 50%, 15% 0);
+    }
+
+    .activeContainer{
+        height: 1350px;
+    }
+
+    .Calif.active{
+        height: 100%;;
+        width: 100%;;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        display: flex;
+    }
+    
+    .Calif.disActive{
+       height: 0;
+       margin-left: 0px;
+       margin-right: 0px;
+       margin-top: 0px;
+       margin-bottom: 0px;
+    }
+
+    .Calif{
+        width: 500px;
+        height: 200px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        transition: all 1s;
+    }
+
+    .front{
+        width: 500px;
+        height: 300px;
+        align-items: center;
+    }
+
+    .scaleFace{
+        height: 200px;
+        width: 500px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .scaleFace img{
+        margin-top: 0;
+    }
+
+    .ActivePorcentajes{
+        margin-top: 0;
+        width: 500px;
+        height: 100px;
+    }
+
+    .front .cantidad{
+        font-size: 4.5em;
+        margin-left: 20px;
+    }
+
+    .ActiveStatistic{
+        width: 500px;
+        height: 500px;
+        border-left: 0;
+        border-right: 0;
+        border-top: solid var(--LineasCartas) 3px;
+        border-bottom: solid var(--LineasCartas) 3px;
+    }
+
+    .monthTrends{
+        width: 500px;
+    }
+
+    .monthTrendChartContainer{
+        width: 500px;
+        height: 400px;
+    }
+
+    .averages{
+        width: 500px;
+        flex-direction: column;
+        height: 700px;
+        align-items: center;
+    }
+
+    .sello{
+        height: 300px;
+        width: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .sello img{
+        width: 300px;
+    }
+
+    .Pfinal{
+        width: 500px;
+        display: flex;
+        text-align: justify;
+    }
+
+    .dissatisfaction{
+        flex-direction: column;
+        width: 500px;
+        height: 1630px;
+        border-bottom: solid var(--Color5) 5px;
+        margin-bottom: 30px;
+    }
+
+    #separadorDissatis{
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        border-top: solid var(--Color5) 5px;
+    }
+
+    .RateP{
+        font-size: 3em;
+        margin-top: 225px;
+    }
+
+    .dissatisfactionRate{
+        width: 500px;
+        height: 600px;
+        border-right: none;
+        border-left: none;
+    }
+
+    .dissatisfactionEvolution{
+        width: 500px;
+        border-right: none;
+    }
+
+    .evolutionDissatis{
+        width: 500px;
+        flex-direction: column;
+    }
+
+    .chartPercentage{
+        width: 500px;
+        height: 400px;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    .percentage h3{
+        font-size: 2.5em;
+    }
+
+    .percentage .percentageP{
+        font-size: 6.5em;
+    }
+
+    body.dark .percentage .percentageP{
+        font-size: 6.5em;
+    }
+
+    .InsatisEvoluImg{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 431px) {
+    
+    .subtitle{
+        font-size: 1.7em;
+    }
+
+    .calif-container{
+        flex-direction: column;
+        width: 400px;
+        height: 1050px;
+    }
+
+    .activeContainer{
+        height: 1350px;
+        width: 400px;
+    }
+
+    .Calif{
+        width: 400px;
+        height: 200px;
+
+    }
+
+    .front{
+        width: 400px;
+    }
+
+    .scaleFace{
+        width: 400px;
+    }
+
+    .ActivePorcentajes{
+        width: 400px;   
+    }
+
+    .ActiveStatistic{
+        width: 400px;
+        height: 500px;
+    }
+
+    .ActiveCharts{
+        width: 400px;
+    }
+
+    .ActiveChartOffice{
+        width: 400px;
+    }
+    
+    .dissatisfaction{
+        width: 400px;
+        height: 1500px;
+    }
+
+    .dissatisfactionRate{
+        width: 400px;
+        height: 500px;
+    }
+
+    .RateP{
+        font-size: 2.2em;
+        margin-top: 200px;
+    }
+
+    .dissatisfactionEvolution{
+        width: 400px;
+    }
+
+    .evolutionDissatis{
+        width: 400px;
+    }
+
+    .chartPercentage{
+        width: 400px;
+    }
+
+    .InsatisEvoluImg{
+        width: 310px;
+    }
+
+    .monthTrends{
+        width: 410px;
+        height: 1200px;
+    }
+
+    .monthTrendChartContainer{
+        width: 400px;
+    }
+
+    .averages{
+        width: 400px;
+    }
+
+    .sello{
+        width: 400px;
+    }
+
+    .Pfinal{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 391px) {
+    
+    .subtitle{
+        font-size: 1.7em;
+    }
+
+    .calif-container{
+        flex-direction: column;
+        width: 370px;
+        height: 1050px;
+    }
+
+    .activeContainer{
+        height: 1300px;
+        width: 370px;
+    }
+
+    .Calif{
+        width: 370px;
+        height: 200px;
+
+    }
+
+    .front{
+        width: 370px;
+    }
+
+    .scaleFace{
+        width: 370px;
+    }
+
+    .ActivePorcentajes{
+        width: 370px;   
+    }
+
+    .ActiveStatistic{
+        width: 370px;
+        height: 450px;
+    }
+
+    .ActiveCharts{
+        width: 370px;
+    }
+
+    .ActiveChartOffice{
+        width: 370px;
+    }
+    
+    .dissatisfaction{
+        width: 370px;
+        height: 1370px;
+    }
+
+    .dissatisfactionRate{
+        width: 370px;
+        height: 430px;
+    }
+
+    .RateP{
+        font-size: 2em;
+        margin-top: 175px;
+    }
+
+    .dissatisfactionEvolution{
+        width: 370px;
+    }
+
+    .evolutionDissatis{
+        width: 370px;
+    }
+
+    .chartPercentage{
+        width: 370px;
+        height: 300px;
+    }
+
+    .InsatisEvoluImg{
+        width: 290px;
+    }
+
+    .percentage{
+        width: 370px;
+    }
+
+    .percentage .percentageP{
+        font-size: 6em;
+    }
+
+    body.dark .percentage .percentageP{
+        font-size: 6em;
+    }
+
+    .monthTrends{
+        width: 370px;
+        height: 1100px;
+    }
+
+    .monthTrendChartContainer{
+        width: 370px;
+        height: 300px;
+    }
+
+    .averages{
+        width: 370px;
+    }
+
+    .sello{
+        width: 370px;
+    }
+
+    .Pfinal{
+        width: 370px;
+    }
+}
+
+@media screen and (max-width: 361px) {
+
+    body {
+        overflow-x: hidden;
+        transition: all .5s;
+    }
+    
+    .subtitle{
+        font-size: 1.7em;
+    }
+
+    .calif-container{
+        flex-direction: column;
+        width: 340px;
+        height: 1050px;
+    }
+
+    .activeContainer{
+        height: 1300px;
+        width: 340px;
+    }
+
+    .Calif{
+        width: 340px;
+        height: 200px;
+
+    }
+
+    .front{
+        width: 340px;
+    }
+
+    .scaleFace{
+        width: 340px;
+    }
+
+    .ActivePorcentajes{
+        width: 340px;   
+    }
+
+    .ActiveStatistic{
+        width: 340px;
+        height: 450px;
+    }
+
+    .ActiveCharts{
+        width: 340px;
+    }
+
+    .ActiveChartOffice{
+        width: 340px;
+    }
+    
+    .dissatisfaction{
+        width: 340px;
+        height: 1370px;
+    }
+
+    .dissatisfactionRate{
+        width: 340px;
+        height: 430px;
+    }
+
+    .RateP{
+        font-size: 2em;
+        margin-top: 160px;
+    }
+
+    .dissatisfactionEvolution{
+        width: 340px;
+    }
+
+    .evolutionDissatis{
+        width: 340px;
+    }
+
+    .chartPercentage{
+        width: 340px;
+        height: 300px;
+    }
+
+    .InsatisEvoluImg{
+        width: 290px;
+    }
+
+    .percentage{
+        width: 340px;
+    }
+
+    .percentage .percentageP{
+        font-size: 6em;
+    }
+
+    body.dark .percentage .percentageP{
+        font-size: 6em;
+    }
+
+    .monthTrends{
+        width: 340px;
+        height: 1100px;
+    }
+
+    .monthTrendChartContainer{
+        width: 340px;
+        height: 300px;
+    }
+
+    .averages{
+        width: 340px;
+    }
+
+    .sello{
+        width: 340px;
+    }
+
+    .Pfinal{
+        width: 340px;
+    }
+}

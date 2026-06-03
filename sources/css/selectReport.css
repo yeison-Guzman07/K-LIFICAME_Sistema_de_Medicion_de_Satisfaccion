@@ -1,0 +1,60 @@
+.container{
+    margin-top: 225px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 300px;
+}
+
+.selectContainer{
+    display: flex;
+    width: 700px;
+}
+
+select{
+    margin-bottom: 170px;
+    width: 700px;
+    height: 100px;
+    font-size: 3em;
+    font-weight: bold;
+    border: solid 5px #01C302;
+    font-family: 'Franklin Gothic Heavy';
+}
+
+.iconContainer{
+    height: 100px;
+    width: 100px;
+    background: #01C302;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 2.5em;
+    position: absolute;
+    margin-left: 600px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    width: 300px;
+    height: 75px;
+    font-size: 2em;
+    background: #FF2A50;
+    color: #fff;
+    font-family: 'Franklin Gothic Heavy';
+    transition: transform .5s;
+}
+
+button:hover{
+    cursor: pointer;
+    background: #be1a38;
+    transform: scale(105%);
+}

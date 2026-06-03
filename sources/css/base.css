@@ -1,0 +1,280 @@
+@font-face {
+    font-family: 'Franklin Gothic Heavy'; /* Nombre de la fuente que usarás en CSS */
+    src: url('../fonts/FRAHV.TTF') format('truetype');
+    font-weight: normal; /* Peso de la fuente */
+    font-style: normal; /* Estilo de la fuente (normal, italic, etc.) */
+}
+
+:root{
+    /* GENERAL */
+    --ColorPrin: #fff;
+    --ColorSec: #1f0043;
+    --ColorTer: #7700FF;
+    --Color1: #ff2952;
+    --Color2: #e47202;
+    --Color3: #ffdb00;
+    --Color4: #88e74f;
+    --Color5: #01c302;
+    --Color6: #1f0043;
+    --Resaltar: #fff;
+    /* TEXTOS */
+    --Texto1: #1f0043;
+    --Texto2: #fff;
+    --textoFooter: #fff;
+    --Hiperviculos1: #ffdb00;
+    --Hiperviculos2: #ff2952;
+    --ShowHiperV: none;
+    /* FORMS */
+    --LineaForm: #fff;
+    --BgInput: #fff;
+    --BorderInput: #01c302;
+    --TextoInput: #1f0043;
+    --Eye: #1f0043;
+    /* MENUS */
+    --ColorMenu: #380078;
+    --BgMenu: #38007880;
+    --ColorMenuAccess: #1f0043;
+    --BgMenuAccess: #1f004380;
+    --TextoMenus: #fff;
+    --BgScrollMenu: #7700FF;
+    --ScrollMenu: #470099;
+    /* ESTADISTICAS */
+    --TextoCartas: #fff;
+    --LineasCartas: #fff;
+    --GraficosCartas: #fff;
+    --BgGraficosCartas: #ffffff2e;
+    --TextoPromedios: #0073ff;
+    /*ENCUESTAS*/
+    --TituloEncuestas: #1f0043;
+    --BgEncuestas: #EAE1FE;
+    --BgQuestion: #fff;
+    --BoxShadowEncuesta: #1f0043;
+    --SelectOptionBg: #1f0043;
+    --SelectOptionBorder: #7700FF;
+    --inputTextQuest: #1f0043;
+    --QuestOptions: #1f0043;
+    --IconOptionQuest: #fff;
+    --BgSubmitQuest: #1f0043;
+    --TxtSubmitQuest: #fff;
+}
+
+body.darkTheme{
+    /* GENERAL */
+    --ColorPrin: #1f0043;
+    --ColorSec: #fff;
+    --ColorTer: #470099;
+    --Color1: #ff2952;
+    --Color2: #e47202;
+    --Color3: #ffdb00;
+    --Color4: #88e74f;
+    --Color5: #01c302;
+    --Color6: #1f0043;
+    --Resaltar: #fff;
+    /* TEXTOS */
+    --Texto1: #fff;
+    --Texto2: #1f0043;
+    --textoFooter: #fff;
+    --Hiperviculos1: #ff2952;
+    --Hiperviculos2: #ffdb00;
+    /* FORMS */
+    --LineaForm: #1f0043;
+    --BgInput: #fff;
+    --BorderInput: #01c302;
+    --TextoInput: #1f0043;
+    --Eye: #1f0043;
+    /* MENUS */
+    --ColorMenu: #380078;
+    --BgMenu: #38007880;
+    --ColorMenuAccess: #1f0043;
+    --BgMenuAccess: #1f004380;
+    --TextoMenus: #fff;
+    --BgScrollMenu: #7700FF;
+    --ScrollMenu: #470099;
+    /* ESTADISTICAS */
+    --TextoCartas: #fff;
+    --LineasCartas: #fff;
+    --GraficosCartas: #fff;
+    --BgGraficosCartas: #ffffff2e;
+    --TextoPromedios: #0073ff;
+    /*ENCUESTAS*/
+    --TituloEncuestas: #fff;
+    --BgEncuestas: #1f0043;
+    --BgQuestion: #fff;
+    --BoxShadowEncuesta: #01c302;
+    --SelectOptionBg: #1f0043;
+    --SelectOptionBorder: #7700FF;
+    --inputTextQuest: #1f0043;
+    --QuestOptions: #EAE1FE;
+    --IconOptionQuest: #1f0043;
+    --BgSubmitQuest: #fff;
+    --TxtSubmitQuest: #1f0043;
+}
+
+body.greyScale{
+    /* GENERAL */
+    --ColorPrin: #fff;
+    --ColorSec: #232323;
+    --ColorTer: #afafaf;
+    --Color1: #5a5a5a;
+    --Color2: #808080;
+    --Color3: #d3d3d3;
+    --Color4: #c8c8c8;
+    --Color5: #8b8b8b;
+    --Color6: #232323;
+    --Resaltar: #fff;
+    /* TEXTOS */
+    --Texto1: #000;
+    --Texto2: #fff;
+    --textoFooter: #000;
+    --Hiperviculos1: #8b8b8b;
+    --Hiperviculos2: #808080;
+    /* FORMS */
+    --LineaForm: #232323;
+    --BgInput: #fff;
+    --BorderInput: #8b8b8b;
+    --TextoInput: #000;
+    --Eye: #232323;
+    /* MENUS */
+    --ColorMenu: #5a5a5a;
+    --BgMenu: #5a5a5a80;
+    --ColorMenuAccess: #232323;
+    --BgMenuAccess: #23232380;
+    --TextoMenus: #fff;
+    --BgScrollMenu: #777575;
+    --ScrollMenu: #2d2d2d;
+    /* ESTADISTICAS */
+    --TextoCartas: #fff;
+    --LineasCartas: #fff;
+    --GraficosCartas: #fff;
+    --BgGraficosCartas: #ffffff2e;
+    --TextoPromedios: #5c5c5c;
+    /*ENCUESTAS*/
+    --TituloEncuestas: #000000;
+    --BgEncuestas: #c4c4c4;
+    --BgQuestion: #fff;
+    --BoxShadowEncuesta: #000000;
+    --SelectOptionBg: #000000;
+    --SelectOptionBorder: #5c5c5c;
+    --inputTextQuest: #000;
+    --QuestOptions: #232323;
+    --IconOptionQuest: #fff;
+    --BgSubmitQuest: #000;
+    --TxtSubmitQuest: #fff;
+}
+
+body.yellowBlack{
+    /* GENERAL */
+    --ColorPrin: #000;
+    --ColorSec: #232323;
+    --ColorTer: #ffdf1b;
+    --Color1: #6f6001;
+    --Color2: #9e8801;
+    --Color3: #ffdf1b;
+    --Color4: #f8d501;
+    --Color5: #ac9401;
+    --Color6: #6f6001;
+    --Resaltar: #000;
+    /* TEXTOS */
+    --Texto1: #ffdf1b;
+    --Texto2: #f8d501;
+    --textoFooter: #000;
+    --Hiperviculos1: #0F00EE;
+    --Hiperviculos2: #0F00EE;
+    /* FORMS */
+    --LineaForm: #ffdf1b;
+    --BgInput: #000;
+    --BorderInput: #ffdf1b;
+    --TextoInput: #ffdf1b;
+    --Eye: #ffdf1b;
+    /* MENUS */
+    --ColorMenu: #000;
+    --BgMenu: #6f60014d;
+    --ColorMenuAccess: #000;
+    --BgMenuAccess: #6f60014d;
+    --TextoMenus: #ffdf1b;
+    --BgScrollMenu: #ffdf1b;
+    --ScrollMenu: #232323;
+    /* ESTADISTICAS */
+    --TextoCartas: #000;
+    --LineasCartas: #000;
+    --GraficosCartas: #000;
+    --BgGraficosCartas: #0000002e;
+    --TextoPromedios: #6f6001;
+    /*ENCUESTAS*/
+    --TituloEncuestas: #ffdf1b;
+    --BgEncuestas: #000;
+    --BgQuestion: #000;
+    --BoxShadowEncuesta: #ffdf1b;
+    --SelectOptionBg: #000000;
+    --SelectOptionBorder: #ffdf1b;
+    --inputTextQuest: #ffdf1b;
+    --QuestOptions: #ffdf1b;
+    --IconOptionQuest: #000;
+    --BgSubmitQuest: #ffdf1b;
+    --TxtSubmitQuest: #000;
+}
+
+body.contrast{
+    /* GENERAL */
+    --ColorPrin: #fff;
+    --ColorSec: #130033;
+    --ColorTer: #a216ff;
+    --Color1: #FF0024;
+    --Color2: #FF5E00;
+    --Color3: #FFFF00;
+    --Color4: #90FF1E;
+    --Color5: #00FF00;
+    --Color6: #130033;
+    --Resaltar: #fff;
+    /* TEXTOS */
+    --Texto1: #130033;
+    --Texto2: #fff;
+    --textoFooter: #fff;
+    --Hiperviculos1: #FFFF00;
+    --Hiperviculos2: #FF0024;
+    /* FORMS */
+    --LineaForm: #fff;
+    --BgInput: #fff;
+    --BorderInput: #00FF00;
+    --TextoInput: #130033;
+    --Eye: #130033;
+    /* MENUS */
+    --ColorMenu: #1f0043;
+    --BgMenu: #1f004380;
+    --ColorMenuAccess: #130033;
+    --BgMenuAccess: #13003380;
+    --TextoMenus: #fff;
+    --BgScrollMenu: #a216ff;
+    --ScrollMenu: #380078;
+    /* ESTADISTICAS */
+    --TextoCartas: #fff;
+    --LineasCartas: #fff;
+    --GraficosCartas: #fff;
+    --BgGraficosCartas: #ffffff2e;
+    --TextoPromedios: #00d9ff;
+    /*ENCUESTAS*/
+    --TituloEncuestas: #130033;
+    --BgEncuestas: #cbb2ff;
+    --BgQuestion: #fff;
+    --BoxShadowEncuesta: #130033;
+    --SelectOptionBg: #130033;
+    --SelectOptionBorder: #a216ff;
+    --inputTextQuest: #130033;
+    --QuestOptions: #130033;
+    --IconOptionQuest: #fff;
+    --BgSubmitQuest: #130033;
+    --TxtSubmitQuest: #fff;
+}
+
+body.showHiperV{
+    --ShowHiperV: underline;
+}
+
+body{
+    background: var(--ColorPrin);
+}
+
+a{
+    color: var(--Hiperviculos1);
+    text-decoration: var(--ShowHiperV);
+}

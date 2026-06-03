@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'Franklin Gothic Heavy'; /* Nombre de la fuente que usarás en CSS */
+    src: url('../fonts/FRAHV.TTF') format('truetype');
+    font-weight: normal; /* Peso de la fuente */
+    font-style: normal; /* Estilo de la fuente (normal, italic, etc.) */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    height: 130px;
+    width: 100%;
+    transform: translateY(-100px);
+    transition: all .7s;
+    z-index: 4;
+}
+
+.navContainer{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background: var(--Color5);
+}
+
+.lower{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 350px;
+    border-bottom-right-radius: 200px;
+    border-bottom-left-radius: 200px;
+    background: var(--Color5);
+    color: var(--Resaltar);
+    font-size: 2em;
+    transition: all .5s;
+}
+
+.lower .rowLower{
+    transform: rotate(540deg);
+    transition: all .5s;
+}
+
+.activeLower{
+    transform: translateY(-20px);
+}
+
+.activeLower .rowLower{
+    transform: rotate(0deg);
+}
+
+.lower:hover{
+    cursor: pointer;
+}
+
+.imagotipo{
+    width: 550px;
+    margin-left: 20px;
+}
+
+body.yellowBlack .imagotipo{
+    filter: invert(100%);
+}
+
+.activeNav{
+    transform: translateY(0px);
+}
+
+nav .navIcon{
+    color: var(--Resaltar);;
+    font-size: 3.5em;
+    margin-left: 15px;
+    margin-right: 15px;
+    transition: all .5s;
+}
+
+nav .navIcon:hover{
+    cursor: pointer;
+    transform: scale(105%);
+}
+
+.containerIcon{
+    right: 0;
+    position: absolute;
+    margin-right: 50px;
+    z-index: 4;
+}
+
+@media screen and (max-width: 1366px) {
+    nav{
+        height: 110px;
+        transform: translateY(-80px);
+    }
+
+    .imagotipo{
+        width: 450px;
+        margin-left: 20px;
+    }
+
+    nav .navIcon{
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 821px) {
+    .imagotipo{
+        width: 400px;
+    }
+
+    nav .navIcon{
+        font-size: 3em;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .containerIcon{
+        margin-right: 25px;
+    }
+}
+
+@media screen and (max-width: 541px) {
+    nav{
+        height: 100px;
+        transform: translateY(-80px);
+    }
+
+    .imagotipo{
+        height: 70px;
+        width: auto;
+        content: url('../img/Klificame\ Isotipo\ Blanco.png');
+        z-index: 3;
+    }
+
+    nav .navIcon{
+        font-size: 3em;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .containerIcon{
+        margin-right: 20px;
+    }
+
+    .lower{
+        font-size: 1.5em;
+    }
+
+    .activeLower{
+        transform: translateY(-3px);
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .imagotipo{
+        height: 67px
+    }
+
+    .lower{
+        width: 280px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    nav{
+        height: 100px;
+        transform: translateY(-80px);
+    }
+
+    .imagotipo{
+        height: 60px
+    }
+
+    nav .navIcon{
+        font-size: 3em;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    nav .navIcon{
+        font-size: 2.3em;
+    }
+
+    .lower{
+        width: 200px;
+    }
+
+    .activeLower{
+        transform: translateY(-3px);
+    }
+}
+
+@media screen and (max-width: 281px) {
+    .imagotipo{
+        height: 50px
+    }
+
+    nav .navIcon{
+        font-size: 2em;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .containerIcon{
+        margin-right: 10px;
+    }
+}

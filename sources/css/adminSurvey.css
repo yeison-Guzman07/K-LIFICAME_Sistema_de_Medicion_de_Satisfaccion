@@ -1,0 +1,138 @@
+main{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+}
+
+h1{
+    color: var(--Color1);
+    font-family: 'Franklin Gothic Heavy';
+    font-size: 3em;
+}
+
+.container{
+    display: flex;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.survey{
+    background: var(--ColorSec);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 350px;
+    border-radius: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    color: var(--Texto2);
+}
+
+.survey hr{
+    border: solid var(--ColorTer) 1px;
+    width: 95%;
+}
+
+.survey img{
+    height: 180px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.titleSurvey{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.survey h2{
+    font-family: sans-serif;
+    margin-top: 15px;
+    width: 65%;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    white-space: nowrap; /* Evita los saltos de línea */
+    overflow: hidden; /* Oculta el desbordamiento */
+    text-overflow: ellipsis; /* Añade los puntos suspensivos */
+}
+
+.fa-share-from-square{
+    color: var(--Color5);
+    font-size: 2em;
+    margin-left: 10px;
+}
+
+.fa-share-from-square:hover{
+    cursor: pointer;
+}
+
+.surveyOption{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+}
+
+.surveyOption p{
+    font-size: 1.3em;
+}
+
+.surveyOption a{
+    color: #fff;
+}
+
+.surveyOption p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.fa-pen{
+    color: var(--ColorTer);
+}
+
+.fa-trash-can{
+    color: var(--Color1);
+}
+
+.addSurvey{
+    margin-left: 15px;
+    margin-right: 15px;
+    background: var(--ColorTer);
+    color: #fff;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    transition: all .5s;
+}
+
+.addSurvey:hover{
+    transform: scale(105%);
+    cursor: pointer;
+}
+
+.addSurvey i{
+    font-size: 4em;
+}
+
+body.yellowBlack .addSurvey{
+    color: #000;
+}
+
+body.darkTheme .surveyImg{
+    content: url(../img/Klificame\ Isotipo\ Dark.png);
+}
+
+body.yellowBlack .surveyImg{
+    content: url(../img/Klificame\ Isotipo\ Amarillo.png);
+}

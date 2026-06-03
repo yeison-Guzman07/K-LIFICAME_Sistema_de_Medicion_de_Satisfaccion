@@ -1,0 +1,283 @@
+/*  MENU DE NAVEGACION  */
+
+.background{
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: var(--BgMenu);
+    opacity: 0;
+    display: none;
+}
+
+.accessBackground{
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: var(--BgMenuAccess);
+    opacity: 0;
+    display: none;
+}
+
+.true-menu{
+    background: var(--ColorMenu);
+    top: 0;
+    position: fixed;
+    width: 480px;
+    height: 100%;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transform: translateX(-480px);
+}
+
+.accessMenu{
+    background: var(--ColorMenuAccess);
+    top: 0;
+    right: 0;
+    position: fixed;
+    width: 480px;
+    height: 100%;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transform: translateX(480px);
+}
+
+.true-menu.active1{
+    transition: all .6s;
+    transform: translateX(0px);
+}
+
+.true-menu.disable1{
+    transition: all .6s;
+    transform: translateX(-480px);
+}
+
+.active2{
+    transition: all 1.5s;
+    display: block;
+    opacity: 1;
+}
+
+.disable2{
+    transition: all 1.5s;
+    opacity: 0;
+    display: none;
+}
+
+.accessMenu.activeAccess1{
+    transition: all .6s;
+    transform: translateX(0px);
+}
+
+.accessMenu.disableAccess1{
+    transition: all .6s;
+    transform: translateX(480px);
+}
+
+.activeAccess2{
+    transition: all 1.5s;
+    display: block;
+    opacity: 1;
+
+}
+
+.disableAccess2{
+    transition: all 1.5s;
+    opacity: 0;
+    display: none;
+}
+
+.img_navigation{
+    width: auto;
+    height: 250px;
+    margin-top: 50px;
+}
+
+.menu-img h1{
+    color: var(--TextoMenus);
+    position: absolute;
+    left: 0;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.menu-img{
+    margin-bottom: 40px;
+}
+
+body.yellowBlack .img_navigation{
+    content: url('../img/Klificame\ Isotipo\ Amarillo.png');
+}
+
+.menu-options{
+    margin-top: 40px;
+    font-size: 1.3em;
+    color: var(--TextoMenus);
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    overflow-y: auto; /* Agrega una barra de desplazamiento vertical cuando sea necesario */
+    max-height: 600px; /* Define una altura máxima para el div antes de que aparezca la barra de desplazamiento */
+    width: 400px;
+}
+
+/* Estilo para la barra de desplazamiento vertical */
+.menu-options::-webkit-scrollbar {
+    width: 12px; /* Ancho de la barra de desplazamiento */
+    height: 12px; /* Altura de la barra de desplazamiento */
+    background-color: ffffff00; /* Color de fondo de la barra de desplazamiento */
+}
+
+/* Estilo para el mango (scroll thumb) de la barra de desplazamiento */
+.menu-options::-webkit-scrollbar-thumb {
+    background-color: ffffff00; /* Color del mango de la barra de desplazamiento */
+    border-radius: 6px; /* Radio de borde del mango de la barra de desplazamiento */
+}
+
+/* Estilo para la pista (scroll track) de la barra de desplazamiento */
+.menu-options::-webkit-scrollbar-track {
+    background-color: #ffffff00; /* Color de fondo de la pista de la barra de desplazamiento */
+}
+
+.menu-options a{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.menu-options a:link{
+    color: var(--TextoMenus);;
+}
+.menu-options a:visited{
+    color: var(--TextoMenus);;
+}
+.menu-options a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.menu-options a img{
+    height: auto;
+    width: 40px;
+}
+
+.menu-options label{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--TextoMenus);;
+}
+
+.menu-options label:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.optionDiv{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 30px;
+    width: 300px;
+    margin-bottom: 40px;
+}
+
+input[type="checkbox"]{
+    margin-left: 20px;
+    appearance: none;
+    -webkit-appearance: none;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="checkbox"]::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 2em;
+    content: "\f00c";
+    color: var(--ColorMenuAccess);;
+    display: none;
+}
+
+input[type="checkbox"]:checked{
+    background: var(--TextoMenus);;
+}
+
+input[type="checkbox"]:checked::after{
+    display: block;
+}
+
+.accessGroup{
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid var(--TextoMenus) 5px;
+    margin-bottom: 50px;
+}
+
+/* ICONOS DE OPCIONES DE COLOR */
+
+.color1{
+    transform: rotate(90deg);
+}
+
+.color2{
+    transform: rotate(180deg);
+}
+
+/*  FIN MENU NAVEGACION  */
+
+@media screen and (max-width: 541px) {
+    .img_navigation{
+        width: auto;
+        height: 200px;
+        margin-top: 50px;
+    }
+
+    .menu-options{
+        margin-left: 60px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .true-menu{
+        width: 100%;
+        transform: translateX(-413px);
+    }
+    
+    .accessMenu{
+        width: 100%;
+        transform: translateX(100%);
+    }
+
+    .true-menu.disable1{
+        transform: translateX(-100%);
+    }
+    .accessMenu.disableAccess1{
+        transform: translateX(100%);
+    }
+}
+
+@media screen and (max-width: 281px) {
+    .menu-options{
+        margin-top: 40px;
+        font-size: 0.8em;
+        margin-left: 160px;
+    }
+
+    .img_navigation{
+        width: auto;
+        height: 140px;
+        margin-top: 50px;
+    }
+}

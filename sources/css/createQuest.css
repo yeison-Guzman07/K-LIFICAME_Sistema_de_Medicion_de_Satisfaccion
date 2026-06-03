@@ -1,0 +1,541 @@
+h1{
+    margin-top: 110px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Franklin Gothic Heavy';
+    font-size: 3em;
+    color: var(--TituloEncuestas);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+body{
+    background: var(--BgEncuestas);
+}
+
+.fix{
+    position: fixed;
+    width: 50px;
+    right: 0;
+    margin-top: 200px;
+    margin-right: 150px;
+}
+
+.options{
+    background: var(--QuestOptions);
+    color: var(--IconOptionQuest);
+    width: 60px;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.options i{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.options i:hover{
+    cursor: pointer;
+}
+
+.questTitle{
+    margin-top: 40px;
+    background: var(--BgQuestion);
+    width: 1000px;
+    height: 130px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    box-shadow: -3px 3px 0px 0px var(--BoxShadowEncuesta); /* Sombra */
+}
+
+.questTitle input{
+    color: var(--inputTextQuest);
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border: none;
+    background: var(--BgQuestion);
+    border-bottom: solid var(--inputTextQuest) 3px;
+    font-family: sans-serif;
+    font-size: 2.5em;
+    margin-left: 30px;
+    width: 70%;
+    transition: all .2s;
+    
+}
+
+.questTitle input:focus{
+    outline: none;
+    border-bottom: solid var(--inputTextQuest) 4px;
+}
+
+.questTitle input::placeholder {
+    color: var(--inputTextQuest);
+}
+
+.question{
+    position: relative;
+    margin-top: 40px;
+    background: var(--BgQuestion);
+    width: 1000px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -3px 3px 0px 0px var(--BoxShadowEncuesta); /* Sombra */
+}
+
+.question input{
+    color: var(--inputTextQuest);
+    margin-top: 25px;
+    border: none;
+    background: var(--BgQuestion);
+    border-bottom: solid var(--inputTextQuest) 3px;
+    font-family: sans-serif;
+    font-size: 1.5em;
+    margin-left: 30px;
+    width: 70%;
+    transition: all .2s;
+}
+
+.question input:focus{
+    outline: none;
+    border-bottom: solid var(--inputTextQuest) 4px;
+}
+
+.question input::placeholder {
+    color: var(--inputTextQuest);
+}
+
+.question .txtQuestion{
+    color: var(--inputTextQuest);
+    margin-top: 25px;
+    margin-left: 30px;
+    font-size: 1.5em;
+    width: 70%;
+    border-bottom: solid var(--inputTextQuest) 3px;
+    font-family: sans-serif;
+}
+
+.question .txtQuestion:hover{
+    cursor: default;
+}
+
+.comentary{
+    position: relative;
+    margin-top: 40px;
+    background: var(--BgQuestion);
+    width: 1000px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -3px 3px 0px 0px var(--BoxShadowEncuesta); /* Sombra */
+}
+
+.comentary textarea{
+    color: var(--inputTextQuest);
+    margin-top: 35px;
+    margin-bottom: 25px;
+    border: none;
+    border-radius: 10px;
+    background: var(--BgQuestion);
+    border-bottom: solid var(--inputTextQuest) 3px;
+    border-left: solid var(--inputTextQuest) 3px;
+    font-family: sans-serif;
+    font-size: 1.5em;
+    margin-left: 30px;
+    width: 90%;
+    height: 200px;
+    resize: none;
+    padding: 10px;
+    transition: all .2s;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.comentary textarea:focus{
+    outline: none;
+    border-bottom: solid var(--inputTextQuest) 4px;
+}
+
+.comentary textarea:hover{
+    cursor: default;
+}
+
+
+.comentary textarea::placeholder {
+    color: var(--inputTextQuest);
+}
+
+.questOptions{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    margin-bottom: 80px;
+}
+
+.question i{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: var(--inputTextQuest);
+    font-size: 3em;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    transition: all .3s;
+}
+
+.question i:hover{
+    cursor: pointer;
+    color: var(--Color1);
+}
+
+.optionContent{
+    width: 180px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.optionContent.active{
+    background: var(--SelectOptionBg);
+    border: solid var(--SelectOptionBorder) 6px;
+}
+
+.optionContent p{
+    font-family: 'Franklin Gothic Heavy';
+    font-size: 1.5em;
+    height: 50px;
+    text-align: center;
+    margin-top: 5PX;
+}
+
+.radioOption{
+    visibility: hidden;
+    position: absolute;
+}
+
+label{
+    transition: all .5s;
+}
+
+label:hover{
+    cursor: pointer;
+    transform: scale(104%);
+}
+
+.questOptions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.questOptions img{
+    width: 145px;
+}
+
+.optionP1{
+    color: var(--Color1);
+}
+
+.optionP2{
+    color: var(--Color2);
+}
+
+.optionP3{
+    color: var(--Color3);
+}
+
+.optionP4{
+    color: var(--Color4);
+}
+
+.optionP5{
+    color: var(--Color5);
+}
+
+input[type="submit"]{
+    display: none;
+    position: absolute;
+}
+
+button{
+    margin-top: 30px;
+    height: 60px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background: var(--BgSubmitQuest);
+    color: var(--TxtSubmitQuest);
+    transition: all .5s;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(103%);
+}
+
+body.greyScale .questOptions img{
+    filter: grayscale(100%);
+}
+
+body.contrast .questOptions img{
+    filter: contrast(200%);
+}
+
+@media screen and (max-width: 1440px) {
+    .optionContent{
+        width: 230px;
+        height: 290px;
+    }
+
+    .optionContent p{
+        font-size: 1.8em;
+        height: 50px;
+    }
+
+    .questOptions img{
+        width: 150px;
+    }
+
+    .questTitle{
+        width: 900px;
+    }
+    .question{
+        width: 900px;
+    }
+    .comentary{
+        width: 900px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .optionContent{
+        width: 200px;
+        height: 230px;
+    }
+
+    .optionContent p{
+        font-size: 1.7em;
+        height: 50px;
+    }
+
+    .questOptions img{
+        width: 130px;
+    }
+
+    .questTitle{
+        width: 800px;
+    }
+    .question{
+        width: 800px;
+    }
+    .comentary{
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 1281px) {
+    .optionContent{
+        width: 190px;
+        height: 230px;
+    }
+
+    .optionContent p{
+        font-size: 1.6em;
+        height: 50px;
+    }
+
+    .questOptions img{
+        width: 125px;
+    }
+
+    .questTitle{
+        width: 800px;
+    }
+    .question{
+        width: 800px;
+    }
+    .comentary{
+        width: 800px;
+    }
+
+    .fix{
+        margin-right: 60px;
+    }
+}
+
+@media screen and (max-width: 1125px) {
+    .questOptions img{
+        width: 130px;
+    }
+
+    .optionContent p{
+        font-size: 1.5em;
+        height: 50px;
+    }
+
+    .fix{
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .optionContent{
+        width: 170px;
+        height: 210px;
+    }
+
+    .optionContent p{
+        font-size: 1.4em;
+        height: 50px;
+    }
+
+    .questOptions img{
+        width: 115px;
+    }
+    .questTitle{
+        width: 600px;
+    }
+    .question{
+        width: 600px;
+    }
+    .comentary{
+        width: 600px;
+    }
+
+    .options{
+        width: 42px;
+        padding: 5px;
+    }
+    
+    .options i{
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .questTitle input{
+        font-size: 1.7em;
+    }
+}
+
+@media screen and (max-width: 431px) {
+    form{
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    h1{
+        font-size: 2em;
+    }
+    .questTitle{
+        width: 335px;
+    }
+    .question{
+        width: 335px;
+    }
+    .comentary{
+        width: 335px;
+    }
+
+    .optionContent{
+        width: 130px;
+        height: 200px;
+    }
+
+    label{
+        width: 140px;
+    }
+
+    .optionContent p{
+        font-size: 1em;
+        height: 50px;
+    }
+
+    .questOptions img{
+        width: 105px;
+    }
+
+    .fix{
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 391px) {
+    form{
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    h1{
+        font-size: 2em;
+    }
+    .questTitle{
+        width: 300px;
+    }
+    .question{
+        width: 300px;
+    }
+    .comentary{
+        width: 300px;
+    }
+
+    .optionContent{
+        width: 300px;
+        height: 200px;
+    }
+
+    label{
+        width: 140px;
+    }
+
+    .optionContent p{
+        font-size: 1.4em;
+        height: 50px;
+    }
+
+    .questOptions img{
+        width: 105px;
+    }
+
+    .questTitle input{
+        font-size: 1.5em;
+    }
+
+    .comentary textarea{
+        font-size: 1.2em;
+    }
+
+    .question input{
+        font-size: 1.2em;
+    }
+}
